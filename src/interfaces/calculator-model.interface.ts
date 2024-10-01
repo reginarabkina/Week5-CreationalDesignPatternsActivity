@@ -17,3 +17,8 @@ export interface ICalculatorModel {
   display(): string;
 
 }
+
+export interface IAbstractCalculatorFactory {
+  makeStandardCalculator() : StandardCalculatorModel
+  makeRoundingCalculator() : RoundingCalculatorModel
+}
